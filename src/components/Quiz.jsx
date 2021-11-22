@@ -16,7 +16,7 @@ import { func, number } from "prop-types";
 
 const queryParams = new URLSearchParams(window.location.search);
 
-let learn =  queryParams.get('learn') ? queryParams.get('learn').toLowerCase().includes("true") ? true : false : true;
+let learn =  queryParams.get('learn') ? queryParams.get('learn').toLowerCase().includes("true") ? true : false : false;
 let exampleCount = 0
 
 class Quiz extends React.Component {
